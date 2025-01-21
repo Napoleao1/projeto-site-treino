@@ -149,5 +149,48 @@ nav.desktop a{
   text-transform: uppercase;
   font-weight: lighter;
 
+}
 
+.box-planos {
+  padding: 40px 0;
+
+}
+
+.box-planos > .center {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.box-planos-single{
+  width: 33.3%;
+  padding: 0 10px;
+
+}
+
+.box-planos-wraper{
+  width: 100%;
+}
+
+.box-planos-single h2{
+  background-color: #2692ff;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  font-weight: lighter;
+
+}
+
+.pontos-plano{
+  padding: 8px 0 15px 0;
+  
+
+
+}
+
+.box-planos-single p{
+  margin-left: 8px;
+  color: #777777;
+  font-size: 17px;
+  margin-top: 8px;
 }
