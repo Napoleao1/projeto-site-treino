@@ -158,18 +158,24 @@ nav.desktop a{
 
 .box-planos > .center {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 
 }
 
 .box-planos-single{
   width: 33.3%;
-  padding: 0 10px;
+  padding: 0 40px;
 
 }
 
-.box-planos-wraper{
+.box-planos-wrapper{
   width: 100%;
+  -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+  border: 1px solid #ccc;
+  min-height: 300px;
+ 
 }
 
 .box-planos-single h2{
@@ -184,13 +190,32 @@ nav.desktop a{
 .pontos-plano{
   padding: 8px 0 15px 0;
   
+}
 
+.preco{
+  margin-top: 10px;
+  padding: 15px 0;
+  text-align: center;
 
 }
 
+.preco h2{
+  font-size: 24px; 
+  color: #777;
+  background-color: transparent;
+  padding: 0 20px;
+  display: inline-block;
+  border-top: 1px solid #ccc;
+  
+}
+
 .box-planos-single p{
-  margin-left: 8px;
+  margin-left: 20px;
   color: #777777;
   font-size: 17px;
   margin-top: 8px;
+}
+
+@media screen and (max-width: 768px){
+    .box-planos-single{width: 100%; margin: 10px 0;}
 }
