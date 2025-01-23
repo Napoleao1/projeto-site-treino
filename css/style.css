@@ -218,22 +218,27 @@ section.parallax{
   position: relative;
   width: 100%;
   min-height: 300px;
+  padding: 40px 0;
   background-image: url('../images/bg_parallax.jpg');
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
 }
 
 section.parallax > .center{
   position: relative;
   z-index: 2;
-  margin: 40px  auto;
   max-width: 960px;
+  color: white;
 
 }
 
-section.parallax h2,
+section.parallax h2{
+  text-align: center;
+}
 section.parallax p{
-  color: white;
+  
+  margin-top: 15px;
 }
 
  .overlay-parallax{
@@ -241,6 +246,8 @@ section.parallax p{
   height: 100%;
   position: absolute;
   z-index: 1;
+  top: 0;
+  left: 0;
   background-color: rgba(20, 20, 20, 0,6);
  }
 
