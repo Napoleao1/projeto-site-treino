@@ -170,9 +170,9 @@ nav.desktop a{
 
 .box-planos-wrapper{
   width: 100%;
-  -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.521);
+  -moz-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.521);
+  box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.521);
   border: 1px solid #ccc;
   min-height: 300px;
  
@@ -196,17 +196,15 @@ nav.desktop a{
   margin-top: 10px;
   padding: 15px 0;
   text-align: center;
-
 }
 
 .preco h2{
+  border-top: 1px solid #807676bd;
   font-size: 24px; 
   color: #777;
   background-color: transparent;
   padding: 0 20px;
   display: inline-block;
-  border-top: 1px solid #ccc;
-  
 }
 
 .box-planos-single p{
@@ -215,6 +213,37 @@ nav.desktop a{
   font-size: 17px;
   margin-top: 8px;
 }
+
+section.parallax{
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  background-image: url('../images/bg_parallax.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+section.parallax > .center{
+  position: relative;
+  z-index: 2;
+  margin: 40px  auto;
+  max-width: 960px;
+
+}
+
+section.parallax h2,
+section.parallax p{
+  color: white;
+}
+
+ .overlay-parallax{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(20, 20, 20, 0,6);
+ }
+
 
 @media screen and (max-width: 768px){
     .box-planos-single{width: 100%; margin: 10px 0;}
