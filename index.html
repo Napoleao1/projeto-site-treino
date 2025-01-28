@@ -30,6 +30,14 @@
                           <li><a href="">contato</a></li>
                       </ul>
                   </nav>
+                  <nav class="mobile">
+                    <i class="fa fa-bars"></i>
+                    <ul>
+                      <li><a href="">home</a></li>
+                      <li><a href="">sobre</a></li>
+                      <li><a href="">contato</a></li>
+                  </ul>
+                  </nav>
                   <div class="clear"></div>
             </header>
             <div class="conteudo-header">
@@ -108,15 +116,65 @@
   
     <section class="final-section">
         <div class="center">
-              <div class="w50">
+              <div class="w50 contato">
+                    <h2><div class="borda-efeito"></div>Entre em contato!</h2>
                     <form>
                           <input type="text" placeholder="Insira seu nome....">
                           <input type="email" placeholder="Insira seu e-mail....">
                           <textarea placeholder="Sua mensagem..."> </textarea>
+                          <input type="submit" value="Enviar!">
                     </form>
               </div>
+              
+              <div class="w50 time">
+                    <h2><div class="borda-efeito"></div>Conheça Nosso time!</h2>
+                       <div class="w50 equipe-single">
+                          <div class="topo-box-usuario">
+                              <div class="box-avatar-1"></div><div class="info-usuario">
+                                  <p style="font-weight: bold;">Ernani Napoleão</p>
+                                  <p style="font-weight: italic;">Desenvolvedor Backend</p>
+                              </div>
+                            </div> <!--topo-box-usuario-->
+                            <div class="descricao-usuario-box">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quae nemo, non sit sed officia libero? Voluptatibus placeat, in blanditiis unde illum voluptas doloremque eos tenetur rerum, molestiae enim dignissimos.</p>
+                            </div><!--descricao-usuario-box-->
+                        </div>
+
+                        <div class="w50 equipe-single">
+                          <div class="topo-box-usuario">
+                              <div class="box-avatar-2"></div><div class="info-usuario">
+                                  <p style="font-weight: bold;">Andreas Toullon</p>
+                                  <p style="font-weight: italic;">Desenvolvedor Web</p>
+                              </div>
+                            </div> <!--topo-box-usuario-->
+                            <div class="descricao-usuario-box">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quae nemo, non sit sed officia libero? Voluptatibus placeat, in blanditiis unde illum voluptas doloremque eos tenetur rerum, molestiae enim dignissimos.</p>
+                            </div><!--descricao-usuario-box-->
+                        </div>
+
+                    <div class="clear"></div>
+              </div>
+              <div class="clear"></div>
+
         </div>
     </section>
-
+    <footer>
+      <p>Todos os direitos reservados a</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+          $('nav.mobile i').click(function(){
+            var el = $(this).parent().find('ul');
+            if(el.is(':visible')== false ){
+              el.fadeIn();
+            }else{
+                el.fadeOut();
+            }
+          })
+      })
+    </script>
 </body>
 </html>

@@ -70,7 +70,46 @@ section.main header{
   color: white;
   font-weight: bold;
 }
+nav.mobile{
+  display: none;
+  float: right;
+}
 
+nav.mobile ul{
+  display: none;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 94px;
+  background: white;
+  width: 100%;
+  list-style-type: none;
+}
+
+nav.mobile > i{
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  position: relative;
+  top: 23px;
+}
+
+nav.mobile li{
+  
+  text-align: center;
+  font-weight: lighter;
+  border-bottom: 1px solid #444;
+  padding: 5px 0;
+}
+
+nav.mobile a{
+  display: block;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+  
+ 
+}
 nav.desktop{
   margin: 20px;
   float: right;
@@ -95,7 +134,7 @@ nav.desktop a{
 
 .conteudo-header{
   position: relative;
-  z-index: 2;
+  z-index: 1;
   max-width: 700px;
   margin: 100px 0;
 
@@ -153,6 +192,7 @@ nav.desktop a{
 
 .box-planos {
   padding: 40px 0;
+  
 
 }
 
@@ -165,17 +205,21 @@ nav.desktop a{
 .box-planos-single{
   width: 33.3%;
   padding: 0 40px;
+  
+ 
 
 }
 
 .box-planos-wrapper{
   width: 100%;
+  border-radius: 16px;
   -webkit-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.521);
   -moz-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.521);
   box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.521);
   border: 1px solid #ccc;
   min-height: 300px;
- 
+ border-radius: 16px;
+ overflow: hidden;
 }
 
 .box-planos-single h2{
@@ -217,13 +261,14 @@ nav.desktop a{
 section.parallax{
   position: relative;
   width: 100%;
-  min-height: 300px;
+  min-height: 400px;
   padding: 40px 0;
   background-image: url('../images/bg_parallax.jpg');
   background-size: cover;
   background-attachment: fixed;
-  background-position: right center;
-  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 40px;
+  
 }
 
 section.parallax > .center{
@@ -252,7 +297,153 @@ section.parallax p{
   background-color: rgba(20, 20, 20, 0,6);
  }
 
+ section.final-class{
+    padding: 30px 0;
+ }
+
+ .w50{
+  float: left;
+  width: 50%;
+  padding:0 20px;
+  margin: 30px 0;
+ }
+
+ section.final-section h2{
+    position: relative;
+    font-weight: lighter;
+    color: #777777;
+    font-size: 24px;
+    
+ }
+
+ section.final-section h2 > .borda-efeito {
+      width: 50px;
+      height: 2px;
+      background: #777;
+      position: absolute;
+      transition: 0.4s;
+ }
+
+ section.final-section h2:hover > .borda-efeito {
+  width: 100px;
+ 
+}
+
+.contato form{
+  margin-top: 15px;
+}
+
+.contato input:not([type=submit]){
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  padding-left: 8px;
+  margin-top: 10px;
+}
+
+.contato textarea{
+  width: 100%;
+  height: 120px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-top: 10px;
+  resize: vertical;
+}
+
+.contato input[type=submit]{
+  cursor: pointer;
+  font-size: 15px;
+  background-color: #2693ff;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  width: 100px;
+  height: 33px;
+  margin-top: 15px;
+}
+
+.time > .w50{
+  width: 48%;
+  margin: 15px 1%;
+}
+
+.equipe-single{
+  padding: 10px 8px;
+  border: 1px solid #ccc;
+  min-height: 240px;
+  padding-bottom: 30px;
+  -webkit-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.521);
+  -moz-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.521);
+  box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.521);
+}
+
+.topo-box-usuario{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccc;
+}
+
+
+ .box-avatar-1{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(../images/1733933854794.jpg);
+  background-size: cover;
+  vertical-align: middle;
+  
+}
+
+.box-avatar-2{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(../images/192384521.jpeg);
+  background-size: cover;
+  vertical-align: middle;
+  
+}
+
+
+.info-usuario{
+  display: inline-block;
+  color: #777;
+  padding-left: 8px;
+  vertical-align: middle;
+}
+
+.descricao-usuario-box{
+  color: #999999;
+  font-weight: lighter;
+  font-size: 14px;
+  margin-top: 20px;
+  
+}
+
+footer{
+  width: 100%;
+  padding: 10px 2%;
+  text-align: center;
+  color: white;
+  background: #444;
+}
 
 @media screen and (max-width: 768px){
+    nav.mobile{
+      display: block;
+    }
+    nav.desktop{
+      display: none;
+    }
+    .w50 { width: 100%;
+          
+    }
+    .time > .w50{
+      width: 100%;
+      margin: 15px 0;
+    }
     .box-planos-single{width: 100%; margin: 10px 0;}
 }
